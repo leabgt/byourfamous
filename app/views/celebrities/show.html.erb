@@ -1,6 +1,8 @@
-<%= @celebrity.name %>
-<%= @celebrity.category %>
-<%= @celebrity.description %>
-<%= @celebrity.price %>
+<img src="app/assets/images/napoleon.jpg" alt="napoleon">
+
+<h2><%= @celebrity.name %></h2>
+<h3><%= @celebrity.category.capitalize %></h3>
+<p><%= @celebrity.description %></p>
+<h3><%= @celebrity.price %> €</h3>
 
 <button>Réserver</button>
