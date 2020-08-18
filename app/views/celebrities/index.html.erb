@@ -1,14 +1,13 @@
-<<<<<<< HEAD
+
 <h1>My selection</h1>
 <div class="row">
   <div class= "cards">
     <% @celebrities.each do |celebrity| %>
       <div class = "col">
         <div class="card-image">
-          <%#= cl_image_tag(celebrity.photo.key),
-          width: 400, height: 300, crop: :fill)%>
+          <%= cl_image_tag celebrity.photo.key, width: 150, height: 150, crop: :thumb, gravity: :face %>
           <div class= "card-text">
-            <%= celebrity.name %>
+            <p><%= celebrity.name %></p>
             <p><%= celebrity.price%>€</p>
           </div>
         </div>
@@ -16,16 +15,6 @@
     <% end %>
   </div>
 </div>
-=======
->>>>>>> master
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
 
 
 
