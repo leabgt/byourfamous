@@ -1,13 +1,13 @@
 <div class="celebrity d-flex">
 
-  <%= cl_image_tag @celebrity.photo.key, width: 400, height: 300, crop: :fill %>
+<div class="celebrity-picture"><%= cl_image_tag @celebrity.photo.key, width: 300, height: 300, crop: :thumb, gravity: :face %></div>
 
   <div class="celebrity-details">
     <h2><%= @celebrity.name %></h2>
     <h3><%= @celebrity.category.capitalize %></h3>
     <p><%= @celebrity.description %></p>
     <h3><%= @celebrity.price %> €</h3>
-    <div class="white-button"><%= link_to "Réserver", bookings_path %></div>
+    <div class="white-button btn btn-flat"><%= link_to "Réserver", bookings_path %></div>
   </div>
 
 </div>
