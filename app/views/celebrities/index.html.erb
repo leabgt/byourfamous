@@ -1,51 +1,20 @@
+<h1>My selection</h1>
+<div class="row">
+  <div class= "cards">
+    <% @celebrities.each do |celebrity| %>
+      <div class = "col">
+        <div class="card-image">
+          <%#= cl_image_tag(celebrity.photo.key),
+          width: 400, height: 300, crop: :fill)%>
+          <div class= "card-text">
+            <%= celebrity.name %>
+            <p><%= celebrity.price%>€</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674186/byourfamous/Zinedine-Zidane.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674555/byourfamous/eminem_aaczht.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674570/byourfamous/napoleon-bonaparte_j5khql.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674560/byourfamous/kim-jong-un_bgqiq2.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597738699/byourfamous/philippe-starck_kcjazc.jpg",
-      width: 400, height: 300, crop: :fill) %>
-
-<%= cl_image_tag("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg",
-      width: 400, height: 300, crop: :fill) %>
