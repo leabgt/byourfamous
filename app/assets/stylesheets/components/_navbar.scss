@@ -1,12 +1,15 @@
-.navbar-lewagon {
+.navbar-byourfamous {
   justify-content: space-between;
-  background: white;
+  background: #F7F7F7;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-byourfamous .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-byourfamous .navbar-brand img {
   width: 40px;
 }
