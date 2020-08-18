@@ -1,11 +1,11 @@
 
 
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(<%= image_path "byourfamous_home_page.jpg"%>); height: 100vh; background-repeat: no-repeat; background-size: cover">">
-  <div class="container">
-    <br>
-    <br>
-    <button type="button" class="btn btn-light" id="button">Rechercher</button>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(<%= image_path "byourfamous_home_page.jpg"%>); height: 100vh; background-repeat: no-repeat; background-size: cover">
+  <div class="container h-100">
+    <div class="div-button">
+      <%= link_to "Rechercher", root_path, class: "btn btn-light", id: "button"  %>
+    </div>
   </div>
 </div>
 
