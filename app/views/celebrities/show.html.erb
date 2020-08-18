@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <div class="celebrity">
 <%= cl_image_tag @celebrity.photo.key, width: 300, height: 300, crop: :thumb, gravity: :face, radius: :max, class: "celebrity-picture" %>
+=======
+<div class="celebrity d-flex">
+  <%= cl_image_tag @celebrity.photo.key, width: 300, height: 300, crop: :thumb, gravity: :face, radius: :max, class: "celebrity-picture" %>
+>>>>>>> 46505c2d71e3867dcef077d7403b7040e98e03e5
   <div class="celebrity-details">
     <h2><%= @celebrity.name %></h2>
     <h3><%= @celebrity.category.capitalize %></h3>
