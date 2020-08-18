@@ -1,3 +1,12 @@
 .celebrity {
+  display: flex;
+  justify-content: center;
+}
 
+.celebrity-details {
+  margin-left: 70px;
+  width: 700px;
+  #price {
+    text-align: right;
+  }
 }
