@@ -1,5 +1,6 @@
 <div class="celebrity d-flex">
-  <img src="app/assets/images/napoleon.jpg" alt="napoleon" height="500px" width="500px">
+
+  <%= cl_image_tag @celebrity.photo.key, width: 400, height: 300, crop: :fill %>
 
   <div class="celebrity-details">
     <h2><%= @celebrity.name %></h2>
