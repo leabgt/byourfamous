@@ -1,10 +1,10 @@
-<div class="celebrity d-flex">
-  <%= cl_image_tag @celebrity.photo.key, width: 300, height: 300, crop: :thumb, gravity: :face, radius: :max, class: "celebrity-picture" %>
+<div class="celebrity">
+  <%= cl_image_tag @celebrity.photo.key, width: 300, height: 300, crop: :thumb, gravity: :face, class: "celebrity-picture" %>
   <div class="celebrity-details">
     <h2><%= @celebrity.name %></h2>
     <h3><%= @celebrity.category.capitalize %></h3>
     <p><%= @celebrity.description %></p>
-    <h3><%= @celebrity.price %> €</h3>
-    <div class="white-button btn btn-flat"><%= link_to "Réserver", bookings_path %></div>
+    <h3 id="price"><%= @celebrity.price %> € / day</h3>
+    <div class="white-button btn btn-flat"><%= link_to "Réserver", new_celebrity_booking_path(@celebrity) %></div>
   </div>
 </div>
