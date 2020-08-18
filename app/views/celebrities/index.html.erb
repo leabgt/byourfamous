@@ -3,6 +3,7 @@
   <div class= "cards">
     <% @celebrities.each do |celebrity| %>
       <div class = "col">
+        <%= link_to celebrity_path(celebrity) do %>
         <div class="card-image">
           <% if celebrity.photo.attached? %>
           <%= cl_image_tag celebrity.photo.key, width: 150, height: 150, crop: :thumb, gravity: :face %>
@@ -12,6 +13,7 @@
             <p><%= celebrity.price %>€</p>
           </div>
         </div>
+        <% end %>
       </div>
     <% end %>
   </div>
