@@ -20,7 +20,7 @@ celebrity_1.save
 
 file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674570/byourfamous/napoleon-bonaparte_j5khql.jpg")
 celebrity_2 = Celebrity.new(name: "Napoleon Bonaparte", category: "history", description: "Napoléon Bonaparte, né le 15 août 1769 à Ajaccio et mort le 5 mai 1821 sur l'île Sainte-Hélène, est un militaire et homme d'État français, premier empereur des Français, du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Iᵉʳ.", price: "15000000")
-celebrity_2.photo.attach(io: file, filnemane: "napoleon.jpg", content_type: "image/jpg")
+celebrity_2.photo.attach(io: file, filename: "napoleon.jpg", content_type: "image/jpg")
 celebrity_2.save
 
 
@@ -46,7 +46,6 @@ file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/b
 celebrity_6 = Celebrity.new(name: "Steve Jobs", category: "technology", description: "Steven Paul Jobs, dit Steve Jobs, né le 24 février 1955 à San Francisco (Californie) et mort le 5 octobre 2011 à Palo Alto (dans le même État), est un entrepreneur et inventeur américain, souvent qualifié de visionnaire, et une figure majeure de l'électronique grand public, notamment pionnier de l'avènement de l'ordinateur personnel, du baladeur numérique, du smartphone et de la tablette tactile. ", price: "10000000")
 celebrity_6.photo.attach(io: file, filename: "steve-jobs.jpg", content_type: "image/jpg")
 celebrity_6.save
-
 
 
 User.create(first_name: "Michel", last_name: "LEHCIM", email: "michel.lehcim@gmail.com")
