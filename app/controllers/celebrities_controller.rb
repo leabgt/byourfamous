@@ -4,5 +4,6 @@ class CelebritiesController < ApplicationController
   end
 
   def show
+    @celebrity = Celebrity.find(params[:id])
   end
 end
