@@ -4,7 +4,7 @@
     <% @celebrities.each do |celebrity| %>
       <div class = "col">
         <div class="card-image">
-          <%#= cl_image_tag(celebrity.photo.key),
+          <%= cl_image_tag(celebrity.photo.key,
           width: 400, height: 300, crop: :fill)%>
           <div class= "card-text">
             <%= celebrity.name %>
@@ -15,6 +15,4 @@
     <% end %>
   </div>
 </div>
-
-
 
