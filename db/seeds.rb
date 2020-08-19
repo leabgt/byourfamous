@@ -47,6 +47,35 @@ celebrity_6 = Celebrity.new(name: "Steve Jobs", category: "technology", descript
 celebrity_6.photo.attach(io: file, filename: "steve-jobs.jpg", content_type: "image/jpg")
 celebrity_6.save
 
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_7 = Celebrity.new(name: "Tiger Woods", category: "sport", description: "Eldrick Tont Woods, plus connu sous le nom de Tiger Woods, né le 30 décembre 1975 en Californie, est un golfeur américain. Il est l'un des plus grands golfeurs de tous les temps et l'un des sportifs les plus populaires du début du XXIᵉ siècle. ", price: "10000000")
+celebrity_7.photo.attach(io: file, filename: "tiger-woods.jpg", content_type: "image/jpg")
+celebrity_7.save
+
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_8 = Celebrity.new(name: "Maria Sharapova", category: "sport", description: "Maria Yourievna Sharapova, née le 19 avril 1987 à Niagan en Sibérie, est une ancienne joueuse professionnelle de tennis russe. Elle est la première Russe à réussir plusieurs performances majeures sur le circuit féminin. Tout d'abord, elle est la première Russe à remporter Wimbledon lors de l'édition 2004. ", price: "500000")
+celebrity_8.photo.attach(io: file, filename: "maria-sharapova.jpg", content_type: "image/jpg")
+celebrity_8.save
+
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_9 = Celebrity.new(name: "Teddy Riner", category: "sport", description: "Teddy Riner, né le 7 avril 1989 aux Abymes en Guadeloupe, est un judoka et animateur français évoluant dans la catégorie des plus de 100 kg, détenteur d'un record de dix titres de champion du monde. ", price: "800000")
+celebrity_9.photo.attach(io: file, filename: "teddy-riner.jpg", content_type: "image/jpg")
+celebrity_9.save
+
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_10 = Celebrity.new(name: "Conor McGregor", category: "sport", description: "Conor Anthony McGregor est un pratiquant d'arts martiaux mixtes irlandais, né le 14 juillet 1988 à Dublin. Surnommé The Notorious, il est ancien champion de la division des poids légers et ancien champion de la division des poids plumes de l'Ultimate Fighting Championship. ", price: "500000")
+celebrity_10.photo.attach(io: file, filename: "conor-mcgregor.jpg", content_type: "image/jpg")
+celebrity_10.save
+
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_11 = Celebrity.new(name: "Laure Manaudou", category: "sport", description: "Laure Manaudou, née le 9 octobre 1986 à Villeurbanne, est une nageuse française pratiquant les quatre nages ayant obtenu des résultats nationaux et internationaux dans la quasi-totalité des distances de compétition : 50 m, 100 m, 200 m, 400 m, 800 m et 1500 m. ", price: "200000")
+celebrity_11.photo.attach(io: file, filename: "laure-manaudou.jpg", content_type: "image/jpg")
+celebrity_11.save
+
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674565/byourfamous/steve-jobs_nkpdwi.jpg")
+celebrity_12 = Celebrity.new(name: "Katy Perry", category: "music", description: "Katheryn Elizabeth Hudson, dite Katy Perry, née le 25 octobre 1984 à Santa Barbara, est une auteure-compositrice-interprète américaine de musique pop et rock. Après avoir chanté à l'église durant son enfance, elle poursuit une carrière dans la musique gospel à l'adolescence. ", price: "10000000")
+celebrity_12.photo.attach(io: file, filename: "katy-perry.jpg", content_type: "image/jpg")
+celebrity_12.save
 
 User.create(first_name: "Michel", last_name: "LEHCIM", email: "michel.lehcim@gmail.com")
 User.create(first_name: "Luke", last_name: "Skywalker", email: "lukeskywalker@gmail.com")
