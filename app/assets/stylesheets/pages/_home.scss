@@ -1,13 +1,14 @@
-// Specific CSS for your home-page
-.div-button {
-  display: flex;
+.search-bar {
   align-items: center;
   justify-content: center;
-  height: 100%;
+}
+.form-control{
+  border-radius: 20px;
 }
 
-
-
-#button {
-  margin-top: 10px;
+.banner{
+  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), asset-url("byourfamous_home_page.jpg");
+  height: calc(100vh - 66px);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
