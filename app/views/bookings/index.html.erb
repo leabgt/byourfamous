@@ -1,21 +1,21 @@
-
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url(<%= image_path "fond_booking_byourfamous.jpg"%>); height: 100vh; background-repeat: no-repeat; background-size: cover">
-   <br>
-   <br>
-   <br>
-  <div class="d-flex justify-content-center" id="head">
-    <h1>- Booking Summary -</h1>
-  </div>
-
-  <div class="d-flex justify-content-center" id="body">
-    <ul>
-      <h3 class="text-left">Celebrity name: Zinedine Zidane</h3>
-      <h3 class="text-left">Category: Sports</h3>
-      <h3 class="text-left">Total price: 1500000 €</h3>
-    </ul>
-  </div>
-
-  <div class="d-flex justify-content-center" id="btnroboto">
-    <button type="button" class="btn btn-light">Confirmer</button>
+<div class="booking">
+  <div class="booking-information d-flex justify-content-center">
+    <div class="booking-property">
+      <ul>
+        <h3 class="text-left">Name</h3>
+        <h3 class="text-left">Category</h3>
+        <h3 class="text-left">Price</h3>
+      </ul>
+    </div>
+    <div class="booking-details">
+      <ul>
+        <h3 class="text-left"><%= @celebrity.name %></h3>
+        <h3 class="text-left"><%= @celebrity.category.capitalize %></h3>
+        <h3 class="text-left"><%= number_to_currency(@celebrity.price, :unit => "€")%></h3>
+        <%= link_to "Confirmer", root_path ,data: { confirm: "Votre réservation est validée" }, class: "white-button btn btn-light" %>
+      </ul>
+    </div>
   </div>
 </div>
+
+

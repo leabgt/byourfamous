@@ -2,6 +2,7 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.all
+    @celebrity = Celebrity.find(params[:celebrity_id])
   end
 
   def new
