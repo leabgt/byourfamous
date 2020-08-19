@@ -1,15 +1,17 @@
 <h1>My selection</h1>
 <div class="content">
-  <div class= "cards">
+  <div class= "row cards">
     <% @celebrities.each do |celebrity| %>
-      <div class = "card">
-        <%= link_to celebrity_path(celebrity) do %>
-          <% if celebrity.photo.attached? %>
-          <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
-          <% end %>
-          <div class= "card-text">
-            <h3><%= celebrity.name %></h3>
-            <p><%= celebrity.price %>€/day</p>
+      <div class = "col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center">
+        <div class="card">
+          <%= link_to celebrity_path(celebrity) do %>
+            <% if celebrity.photo.attached? %>
+            <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
+            <% end %>
+            <div class= "card-text">
+              <h3><%= celebrity.name %></h3>
+              <p><%= celebrity.price %>€/day</p>
+            </div>
           </div>
         </div>
       <% end %>
