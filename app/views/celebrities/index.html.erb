@@ -5,7 +5,7 @@
         <div class="card">
           <%= link_to celebrity_path(celebrity) do %>
             <% if celebrity.photo.attached? %>
-            <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
+              <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
             <% end %>
             <div class= "card-text">
               <h3><%= celebrity.name %></h3>
