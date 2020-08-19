@@ -1,16 +1,32 @@
-.cards {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-text-decoration: none;
-}
+.cards.col-4 {
+    padding: 16px;
+  }
 
-.col {
+.card {
+  margin: 16px;
+  overflow: hidden;
+  background: $light-gray;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 300px;
+  height: 350px;
+  a {
+    text-decoration: none;
+    color: $gray;
+  }
+  a:hover {
+    opacity: .9;
+  }
 }
-
+.image {
+width: 100%;
+height: 280px;
+}
 .card-text {
-display: flex;
-justify-content: space-between;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
 }
 
 .card-text h3 {
