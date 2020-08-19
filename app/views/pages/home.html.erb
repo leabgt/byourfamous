@@ -1,25 +1,32 @@
 <div class="banner d-flex justify-content-center align-item-center" >
     <div class="search-bar d-flex">
-      <%= form_tag root_path, method: :get do %>
+        <%= form_tag celebrities_path, method: :get do %>
+
           <%= text_field_tag :query,
-          params[:query],
-        class: "form-control",
-        placeholder: "Find a celebrity"
-        %>
-        <%= link_to "Search", celebrities_path, class: "white-button btn btn-light"%>
-      <% end %>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent">
-              Filter by Category
-            </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">Sport</button>
-                <button class="dropdown-item" type="button">Music</button>
-                <button class="dropdown-item" type="button">History</button>
-                <button class="dropdown-item" type="button">Politic</button>
-                <button class="dropdown-item" type="button">Art</button>
-                <button class="dropdown-item" type="button">Technology</button>
-              </div>
-          </div>
-        </div>
-      </div>
+            params[:query],
+            class: "form-control",
+            placeholder: "Find a celebrity"
+          %>
+
+         <!--  <label for="starting-date">starting date</label>
+          <%#= date_field_tag :start_date,
+            params[:start_date]
+          %>
+          <label for="ending-date">ending date</label>
+          <%#= date_field_tag :end_date,
+            params[:end_date]
+          %> -->
+
+          <label for="category">category</label>
+          <% celebrity_table = Celebrity::CATEGORIES.map do |category| %>
+            <% [category, category] %>
+          <% end %>
+
+          <%= select_tag(:categories, options_for_select(
+            celebrity_table
+          ), {:class => 'select2'}) %>
+
+          <%= submit_tag "Search", class: "btn btn-light", id: "button" %>
+        <% end %>
+    </div>
+</div>

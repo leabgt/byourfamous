@@ -1,1 +1,11 @@
-<h1>helllooooo</h1>
+<div class="booking-form d-flex justify-content-around">
+  <%= simple_form_for [@celebrity, @booking] do |f| %>
+    <h1><%= @celebrity.name %></h1>
+    <h3><%= @celebrity.category.capitalize %></h3>
+    <%= f.input :start_date  %>
+    <%= f.input :end_date %>
+    <h3><%= @celebrity.price %> €</h3>
+    <%= f.submit "Reserver", class: "whitebutton"%>
+  <% end %>
+</div>
+
