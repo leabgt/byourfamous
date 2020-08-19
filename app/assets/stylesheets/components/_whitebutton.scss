@@ -1,12 +1,17 @@
 .white-button {
+  color: $light-gray;
   border: 1px solid #4A4A4A;
   background: #FF99FF;
   padding: 8px 24px;
   border-radius: 50px;
-  font-weight: lighter;
   opacity: 0,6;
+  font-weight: light;
+}
+
+.white-button a {
+  text-decoration: none;
   a:hover {
-    text-decoration: none;
     color: $gray;
+    text-decoration: none;
   }
 }
