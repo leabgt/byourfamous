@@ -1,1 +1,8 @@
-<h1>helllooooo</h1>
+<%= simple_form_for [@celebrity, @booking] do |f| %>
+  <h1><%= @celebrity.name %></h1>
+  <h3><%= @celebrity.category.capitalize %></h3>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+  <h3><%= @celebrity.price %> €</h3>
+  <%= f.submit %>
+<% end %>
