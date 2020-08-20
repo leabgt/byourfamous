@@ -11,5 +11,6 @@ class CelebritiesController < ApplicationController
 
   def show
     @celebrity = Celebrity.find(params[:id])
+    @randomcelebrities = Celebrity.order('RANDOM()').first(4)
   end
 end
