@@ -9,7 +9,7 @@
             <% end %>
             <div class= "card-text">
               <h3><%= celebrity.name %></h3>
-              <p><%= celebrity.price %>€/day</p>
+              <p><%= number_to_currency(celebrity.price, :unit => "€") %>/day</p>
             </div>
           </div>
         </div>
@@ -17,3 +17,4 @@
     <% end %>
   <!-- </div> -->
 </div>
+

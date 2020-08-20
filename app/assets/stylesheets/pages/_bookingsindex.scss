@@ -1,0 +1,46 @@
+.booking {
+  text-align: left;
+  height: 100vh;
+  padding: 20px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.booking h1 {
+padding-bottom: 56px;
+align-items:center;
+}
+
+.booking-information {
+border: 1px solid white;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+border-radius: 10px;
+padding: 40px;
+h3 {
+margin-left: -14px;
+}
+}
+
+.booking-property {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 24px;
+}
+.booking-details {
+  font-weight: bold;
+}
+
+
+.banner{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), asset-url("byourfamous_recap_booking.jpg");
+  height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 200px;
+}
+
+.booking-buttons {
+  padding-top: 56px;
+}
