@@ -14,7 +14,11 @@
         <ul>
           <p><%= @celebrity.name %></p>
           <p><%= @celebrity.category.capitalize %></p>
-          <p><%= number_to_currency(@celebrity.price, :unit => "€")%></p>
+          <p>
+            <% number_of_days = (@booking.end_date - @booking.start_date).to_i %>
+            <% total_price = @celebrity.price * number_of_days %>
+            <%= number_to_currency(total_price, :unit => "€")%>
+          </p>
         </ul>
       </div>
     </div>
