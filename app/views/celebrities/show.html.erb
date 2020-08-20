@@ -5,6 +5,9 @@
     <h3><%= @celebrity.category.capitalize %></h3>
     <p><%= @celebrity.description %></p>
     <h3 id="price"><%= number_to_currency(@celebrity.price, :unit => "€") %> / day</h3>
-    <div class="white-button btn btn-light"><%= link_to "Réserver", celebrity_bookings_path(@celebrity) %></div>
+    <%= link_to "Book", new_celebrity_booking_path(@celebrity), class: "white-button btn btn-flat" %>
+    <%= link_to "Back", celebrities_path, class: "back-button btn btn-flat" %>
   </div>
 </div>
+
+
