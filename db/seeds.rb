@@ -18,7 +18,7 @@ celebrity_1.photo.attach(io: file, filename: "zidane.jpg", content_type: "image/
 celebrity_1.save!
 
 
-file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597674570/byourfamous/napoleon-bonaparte_j5khql.jpg")
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597929410/byourfamous/napoleon-bonaparte_jf0rte.jpg")
 celebrity_2 = Celebrity.new(name: "Napoleon Bonaparte", category: "history", description: "Napoléon Bonaparte, né le 15 août 1769 à Ajaccio et mort le 5 mai 1821 sur l'île Sainte-Hélène, est un militaire et homme d'État français, premier empereur des Français, du 18 mai 1804 au 6 avril 1814 et du 20 mars au 22 juin 1815, sous le nom de Napoléon Iᵉʳ.", price: "15000000")
 celebrity_2.photo.attach(io: file, filename: "napoleon.jpg", content_type: "image/jpg")
 celebrity_2.save!
@@ -77,7 +77,7 @@ celebrity_12 = Celebrity.new(name: "Katy Perry", category: "music", description:
 celebrity_12.photo.attach(io: file, filename: "katy-perry.jpg", content_type: "image/jpg")
 celebrity_12.save!
 
-file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597924731/byourfamous/drake_q9ys0r.jpg")
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597929410/byourfamous/Drake_tpmuyt.jpg")
 celebrity_13 = Celebrity.new(name: "Drake", category: "music", description: "Drake, de son vrai nom Aubrey Drake Graham, est un rappeur-compositeur, chanteur et acteur canadien, né le 24 octobre 1986 à Toronto, au Canada. Longtemps affilié au label de Lil Wayne Young Money Entertainment, il y a signé officiellement en juin 2009. Son premier album studio, Thank Me Later, sort le 14 juin 2010. ", price: "10000000")
 celebrity_13.photo.attach(io: file, filename: "drake.jpg", content_type: "image/jpg")
 celebrity_13.save!
@@ -102,7 +102,7 @@ celebrity_17 = Celebrity.new(name: "Louis XIV", category: "history", description
 celebrity_17.photo.attach(io: file, filename: "louis-XIV.jpg", content_type: "image/jpg")
 celebrity_17.save!
 
-file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597924732/byourfamous/charles-de-gaulle_uui3ic.jpg")
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597929410/byourfamous/charles-de-gaulle_ivpyn4.jpg")
 celebrity_18 = Celebrity.new(name: "Charles De Gaulle", category: "history", description: "Charles de Gaulle [ ʃaʁl də ɡol], communément appelé le général de Gaulle ou parfois simplement le Général, né le 22 novembre 1890 à Lille et mort le 9 novembre 1970 à Colombey-les-Deux-Églises, est un militaire, résistant, homme d'État et écrivain français.", price: "10000000")
 celebrity_18.photo.attach(io: file, filename: "charles-de-gaulle.jpg", content_type: "image/jpg")
 celebrity_18.save!
@@ -157,7 +157,7 @@ celebrity_28 = Celebrity.new(name: "Gordon Brown", category: "politic", descript
 celebrity_28.photo.attach(io: file, filename: "gordon-brown.jpg", content_type: "image/jpg")
 celebrity_28.save!
 
-file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597924730/byourfamous/Indira-Gandhi-_ygcog6.jpg")
+file = URI.open("https://res.cloudinary.com/drj8fjdmq/image/upload/v1597929410/byourfamous/Indira-Gandhi_zql6fw.jpg")
 celebrity_29 = Celebrity.new(name: "Indira Gandhi", category: "politic", description: "Indira Priyadarshini Gandhi, née Nehru, le 19 novembre 1917 et morte le 31 octobre 1984, est une femme d'État indienne, Première ministre de 1966 à 1977 puis de 1980 à sa mort en 1984.", price: "10000000")
 celebrity_29.photo.attach(io: file, filename: "indira-gandhi.jpg", content_type: "image/jpg")
 celebrity_29.save!
