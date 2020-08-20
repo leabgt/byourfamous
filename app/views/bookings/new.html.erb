@@ -4,10 +4,10 @@
       <h1><%= @celebrity.name %></h1>
       <h3><%= @celebrity.category.capitalize %></h3>
       <div class="date-input">
-        <%= f.input :start_date, as: :string, input_html: {class: "datepicker"}  %>
-        <%= f.input :end_date, as: :string, input_html: {class: "datepicker"} %>
+        <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"}  %>
+        <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
       </div>
-      <h3 id="total-price"><%= number_to_currency(@celebrity.price, :unit => "€") %> €</h3>
+      <h3 id="total-price"><%= number_to_currency(@celebrity.price, :unit => "€") %></h3>
       <div class="link">
         <%= f.submit "Reserver", class: "white-button"%>
         <%= link_to "Back", celebrities_path, class: "back-button btn btn-flat" %>
