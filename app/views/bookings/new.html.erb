@@ -1,11 +1,15 @@
-<div class="booking-form d-flex justify-content-around">
-  <%= simple_form_for [@celebrity, @booking] do |f| %>
-    <h1><%= @celebrity.name %></h1>
-    <h3><%= @celebrity.category.capitalize %></h3>
-    <%= f.input :start_date  %>
-    <%= f.input :end_date %>
-    <h3><%= @celebrity.price %> €</h3>
-    <%= f.submit "Reserver", class: "whitebutton"%>
-  <% end %>
+<div class="content-new-booking">
+  <div class="booking-form">
+    <%= simple_form_for [@celebrity, @booking] do |f| %>
+      <h1><%= @celebrity.name %></h1>
+      <h3><%= @celebrity.category.capitalize %></h3>
+      <%= f.input :start_date, as: :string, input_html: {class: "datepicker"}  %>
+      <%= f.input :end_date, as: :string, input_html: {class: "datepicker"} %>
+      <h3><%= number_to_currency(@celebrity.price, :unit => "€") %> €</h3>
+      <%= f.submit "Reserver", class: "white-button"%>
+      <%= link_to "Back", celebrities_path, class: "back-button btn btn-flat" %>
+    <% end %>
+  </div>
 </div>
+
 
