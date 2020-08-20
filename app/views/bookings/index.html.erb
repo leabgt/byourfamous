@@ -2,19 +2,19 @@
   <div class="banner" >
     <h1>My booking summary</h1>
     <hr>
-  <div class="booking-information d-flex justify-content-center">
+  <div class="booking-information d-flex justify-content-around align-items-center"">
       <div class="booking-property">
         <ul>
-          <h3 class="text-left">Name</h3>
-          <h3 class="text-left">Category</h3>
-          <h3 class="text-left">Price</h3>
+          <h3>Name</h3>
+          <h3>Category</h3>
+          <h3>Price</h3>
         </ul>
       </div>
       <div class="booking-details">
         <ul>
-          <p class="text-left"><%= @celebrity.name %></p>
-          <p class="text-left"><%= @celebrity.category.capitalize %></p>
-          <p class="text-left"><%= number_to_currency(@celebrity.price, :unit => "€")%></p>
+          <p><%= @celebrity.name %></p>
+          <p><%= @celebrity.category.capitalize %></p>
+          <p><%= number_to_currency(@celebrity.price, :unit => "€")%></p>
         </ul>
       </div>
     </div>
