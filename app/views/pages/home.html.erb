@@ -1,5 +1,11 @@
-<div class="banner d-flex justify-content-center align-item-center" >
-    <div class="search-bar d-flex">
+<div class="banner" >
+    <div class="container">
+      <div class="d-flex">
+        <div><h1>BYOURFAMOUS</h1></div>
+        <div class="typewriter"><h3>rent your celebrity</h3></div>
+      </div>
+
+      <form action="/celebrities" method="GET" class="search-bar d-flex ">
         <%= form_tag celebrities_path, method: :get do %>
 
           <%= text_field_tag :query,
@@ -8,25 +14,29 @@
             placeholder: "Find a celebrity"
           %>
 
-         <!--  <label for="starting-date">starting date</label>
-          <%#= date_field_tag :start_date,
-            params[:start_date]
-          %>
-          <label for="ending-date">ending date</label>
-          <%#= date_field_tag :end_date,
-            params[:end_date]
-          %> -->
+         <!--  <label for="starting-date" class="starting-date">starting-date</label>
+          <input type="date">
+          <label for="ending-date" class="ending-date">ending-date</label>
+          <input type="date">
+ -->
 
-          <label for="category">category</label>
-          <% celebrity_table = Celebrity::CATEGORIES.map do |category| %>
-            <% [category, category] %>
-          <% end %>
+          <label for="category" class="category">category</label>
 
-          <%= select_tag(:categories, options_for_select(
-            celebrity_table
-          ), {:class => 'select2'}) %>
+
+
+            <select name="dropdown" id="dropdown">
+              <option value="category">category</option>
+              <option value="sport">sport</option>
+              <option value="music"> music</option>
+              <option value="history">history</option>
+              <option value="politic">politic</option>
+              <option value="art">art</option>
+              <option value="technology">technology</option>
+            </select>
+
 
           <%= submit_tag "Search", class: "white-button btn btn-light" %>
         <% end %>
+      </form>
     </div>
 </div>
