@@ -2,8 +2,8 @@ class CelebritiesController < ApplicationController
   def index
     if params[:query].present?
       @celebrities = Celebrity.where("name ILIKE ?", "%#{params[:query]}%")
-    elsif params[:categories].present?
-      @celebrities = Celebrity.where("category ILIKE ?", "%#{params[:categories]}%")
+    elsif params[:dropdown].present?
+      @celebrities = Celebrity.where("category ILIKE ?", "%#{params[:dropdown]}%")
     else
       @celebrities = Celebrity.all
     end
