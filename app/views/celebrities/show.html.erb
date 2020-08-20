@@ -9,5 +9,22 @@
     <%= link_to "Back", celebrities_path, class: "back-button btn btn-flat" %>
   </div>
 </div>
+<div class= "celebrity-suggestion-block">
+  <h3>Your celebrity suggestions</h3>
+  <div class= "celebrity-suggestion d-flex justify-content-around">
+  <% @randomcelebrities.each do |randomcelebrity| %>
+      <div class="card">
+        <%= link_to celebrity_path(randomcelebrity) do %>
+          <%= cl_image_tag randomcelebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
+        <% end %>
+        <div class= "card-text">
+            <h3><%= randomcelebrity.name %></h3>
+            <p><%= number_to_currency(randomcelebrity.price, :unit => "€") %>/day</p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 
 
