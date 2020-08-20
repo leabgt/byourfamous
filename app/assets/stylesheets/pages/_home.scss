@@ -1,8 +1,8 @@
 .banner-home{
-  background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), asset-url("byourfamous_home_page.jpg");
   height: calc(100vh - 66px);
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
   h1 {
     color: #0E0E0E;
     text-shadow: -2px 0 4px #000;
@@ -13,13 +13,34 @@
   }
 }
 
-.container{
+.full_screen_sections_video {
+ min-width: 100%;
+ min-height: 100%;
+ z-index: -100;
+}
+
+// .full_screen_sections_video {
+//   background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), asset-url("https://www.ritterconsulting.fr//wp-content/uploads/videos/eiffel.webm");
+//   height: calc(100vh - 66px);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   h1 {
+//     color: #0E0E0E;
+//     text-shadow: -2px 0 4px #000;
+//     font-weight:lighter;
+//     margin-top: 100px;
+//     text-align: center;
+//     font-size: 60px;
+//   }
+
+// }
+
+.contient{
   align-item: center;
   width: 50%;
 }
 
-.d-flex {
-  display: flex;
+.space-between {
   justify-content: space-between;
 }
 
@@ -56,14 +77,6 @@ margin-top: 160px;
 
 }
 
-.starting-date{
-
-}
-
-.ending-date{
-}
-
-
 .search-bar {
   align-items: center;
   justify-content: center;
@@ -81,23 +94,14 @@ margin-top: 160px;
   border-radius: 20px;
 }
 
-.category{
-  padding-top: 8px;
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-.select_tag{
-  background-color: yellow;
-}
-
 .white-button{
   margin-left: 32px;
   margin-right: 32px;
 }
 
-
 #dropdown{
+  margin-left: 32px;
+  margin-right: 32px;
   border-radius: 20px;
   border: 4px;
   padding: 8px;
