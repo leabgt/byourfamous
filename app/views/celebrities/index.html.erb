@@ -1,20 +1,47 @@
-<div class="row">
-  <!-- <div class= "cards"> -->
-    <% @celebrities.each do |celebrity| %>
-      <div class = "col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="card">
-          <%= link_to celebrity_path(celebrity) do %>
-            <% if celebrity.photo.attached? %>
-              <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
-            <% end %>
-            <div class= "card-text">
-              <h3><%= celebrity.name %></h3>
-              <p><%= number_to_currency(celebrity.price, :unit => "€") %>/day</p>
+<div class= "index container">
+  <form action="/celebrities" method="GET" class="search-bar-index d-flex">
+        <%= form_tag celebrities_path, method: :get do %>
+
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Find a celebrity"
+          %>
+
+        <select name="dropdown" id="dropdown">
+          <option value="category">category</option>
+          <option value="sport">sport</option>
+          <option value="music"> music</option>
+          <option value="history">history</option>
+          <option value="politic">politic</option>
+          <option value="art">art</option>
+          <option value="technology">technology</option>
+        </select>
+
+
+          <%= submit_tag "Search", class: "white-button btn btn-light" %>
+        <% end %>
+  </form>
+
+
+
+  <div class="row">
+    <!-- <div class= "cards"> -->
+      <% @celebrities.each do |celebrity| %>
+        <div class = "col-xs-12 col-md-6 col-lg-4 d-flex justify-content-center">
+          <div class="card">
+            <%= link_to celebrity_path(celebrity) do %>
+              <% if celebrity.photo.attached? %>
+                <%= cl_image_tag celebrity.photo.key, class: "image", crop: :thumb, gravity: :face %>
+              <% end %>
+              <div class= "card-text">
+                <h3><%= celebrity.name %></h3>
+                <p><%= number_to_currency(celebrity.price, :unit => "€") %>/day</p>
+              </div>
             </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
-    <% end %>
-  <!-- </div> -->
+    <!-- </div> -->
+  </div>
 </div>
-

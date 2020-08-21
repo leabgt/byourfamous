@@ -3,6 +3,20 @@
   height: 100vh;
   padding: 20px;
   display:flex;
-  align-items:center;
+  // align-items:center;
   justify-content: center;
+}
+
+.search-bar-index {
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  // margin-left: 100px;
+  // margin-right: 100px;
+  // position: absolute;
+  border: outset;
+  border-color: #FF99FF;
+  padding: 32px;
+  height: 50px;
+  border-radius: 32px;
 }
