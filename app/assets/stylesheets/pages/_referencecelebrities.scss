@@ -1,6 +1,47 @@
-.banner {
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), asset-url("celebritiescollage.jpg");
+.banner-referencecelebrities {
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), asset-url("celebritiescollage.jpg");
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  text-align: center;
+}
+
+.banner-referencecelebrities {
+  margin-top: 100px;
+
+  h1{
+    margin-bottom: 100px;
+  }
+}
+
+.block-referencecelebrities {
+  margin-bottom: 50px;
+  overflow: hidden;
+  height: 400px;
+  background: $gray;
+  box-shadow: 0 0 15px rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+}
+
+.block-referencecelebrities img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+.block-referencecelebrities h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.block-referencecelebrities p {
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.block-referencecelebrities .card-product-infos {
+  padding: 16px;
 }
