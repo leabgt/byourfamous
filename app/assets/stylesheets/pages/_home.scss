@@ -25,7 +25,8 @@
 
 .contient{
   align-item: center;
-  width: 50%;
+  justify-content: center;
+  display: flex;
 }
 
 .space-between {
@@ -34,42 +35,44 @@
 }
 
 .typewriter h3 {
-   color: #0E0E0E;
+  color: #0E0E0E;
   text-shadow: -1px 0 1px #0E0E0E;
   font-weight:lighter;
   text-align: center;
   font-size: 20px;
   width: 200px;
+  margin-top: 160px;
 
-  overflow: hidden;
-  border-right: .15em #0E0E0E; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-  animation-iteration-count:
-    infinite;
+  // overflow: hidden;
+  // border-right: .15em #0E0E0E; /* The typwriter cursor */
+  // white-space: nowrap; /* Keeps the content on a single line */
+  // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  // letter-spacing: .15em; /* Adjust as needed */
+  // animation:
+    // typing 3.5s steps(30, end),
+    // blink-caret .5s step-end infinite;
+  // animation-iteration-count:
+    // infinite;
 
 
-    @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+//     @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: #0E0E0E }
+// }
 }
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #0E0E0E }
-}
-margin-top: 160px;
 
+.typed-cursor {
+  color: rgba(0, 0, 0, 0);
 }
 
 .search-bar {
   align-items: center;
   justify-content: center;
-  margin: 0;
   position: absolute;
   top: 50%;
   border: outset;
