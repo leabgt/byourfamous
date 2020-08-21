@@ -3,4 +3,14 @@ class PagesController < ApplicationController
   def home
     @celebrities = Celebrity.all
   end
+
+  def agence
+  end
+
+  def contact
+  end
+
+  def references
+  end
+
 end
